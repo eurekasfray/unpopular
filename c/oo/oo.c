@@ -1,4 +1,4 @@
-// Name: Object-oriented C ?
+// Name: Object-oriented-like C ?
 // Date: 2014/06/01
 // Author: eurekasfray
 
