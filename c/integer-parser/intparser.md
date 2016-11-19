@@ -17,7 +17,7 @@ digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
 
 ## Working
 
-The parser works by using a deterministic finite-state machine (FSM). The FSM has three states --- S1 START, S2 MAIN, and S3 END.
+The parser works by using a deterministic finite-state machine (FSM). The FSM has three states --- S1 start, S2 main, and S3 end.
 
 ```
                         ,--|digit|--.
