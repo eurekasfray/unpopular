@@ -17,10 +17,18 @@ digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
 
 ## Working
 
-The parser works by using a deterministic finite-state machine (FSM). The FSM has three states --- *S1* (START), *S2* (MAIN), and *S3* (END).
+The parser works by using a deterministic finite-state machine (FSM). The FSM has three states --- S1 START, S2 MAIN, and S3 END.
 
 ```
-[insert diagram here]
+                        ,--|digit|--.
+                       |            |
+                        \          /
+                         \        v    .-------------|EOS; error=false|------------.
+  .----.                   .----.     /                                             \     .----.
+ (  S1  )-----|digit|---->(  S2  )---+                                               +-->(  S3  )
+  '----'                   '----'     \                                             /     '----'
+                                       '-----|any other character; error=true|-----'
+
 ```
 
 The initiating state, *S1*, the machine gets the first character from the input and checks to see if the character is a digit. If the character is in fact a digit, then the machines switches to state *S2* where it will continue to check the remaining input. However if the character is not a digit, the machine sets the error flag and then switches to the ending state *S3*.
