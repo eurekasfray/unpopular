@@ -1,0 +1,17 @@
+These are the to-do thesis to write about in the
+technical document for XAN:
+
+ 1. What is XAN?
+ 2. Write about the document. Why was it written?
+ 3. Design specifications. What features do you want in it.
+ 4. Design cocepts and principles used
+ 5. What can XAN do now (current features)
+ 6. What's next for CXAN (future features)
+ 7. XAN subroutines and what they do. Write steps about them
+ 8. How to use XAN?
+ 9. How does XAN work? Give simple steps which follow the entire source code
+10. *Have an appendix with the algorithm
+11. What are the goals for this program? How do you want to please the user? What do you want XAN to do?
+12. What are the non-goals for this program>
+13. What are the components of XAN? How do they work? What features do they have?
+14. What is the problem? Problem Definition 

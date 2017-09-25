@@ -1,0 +1,341 @@
+.ALGORITHM XAN Alpha 0
+.VARIABLES
+   current player = 1
+   index = 0
+   current block = 0
+   key = ""
+   block array
+   
+.BEGIN
+ goto the fifth block
+   {
+    set current block = 5
+	set index = 5
+   }
+ fill the current block with gray
+
+main_loop:
+ get key
+ if key = space then
+	if current player = player 1 then
+		fill current block with bright red
+		set _block_array[index]=1
+		set current player = player 2
+    endif
+	if current player = player 2 then
+		fill current block with bright blue
+		set _block_array[index]=2
+		set current_player = player 1
+	endif
+ endif 
+ 
+ if key = up arrow then
+    if current block = 1 or 2 or 3 then
+		do not do anything!
+	endif
+	if current block = 4 or 5 or 6 then
+	    set index = current block
+		if _block_selection[index] = 0 then
+		    fill current block with black
+			case current block:
+			    1 - goto first block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    2 - goto second block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    3 - goto third block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+    endif
+	if current block = 7 or 8 or 9 then
+	    set index = current block
+		if _block_selection[index] = 0 then
+		    fill current block with black
+			case current block:
+			    4 - goto first block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    5 - goto second block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    6 - goto third block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+    endif					
+ if key = left arrow then
+    if current block = 1 or 4 or 7 then
+		do not do anything!
+	endif
+	if current block = 2 or 5 or 8 then
+	    set index = current block
+		if _block_selection[index] = 0 then
+		    fill current block with black
+			case current block:
+			    1 - goto first block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    4 - goto second block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    7 - goto third block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+    endif
+	if current block = 3 or 6 or 9 then
+	    set index = current block
+		if _block_selection[index] = 0 then
+		    fill current block with black
+			case current block:
+			    5 - goto first block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    5 - goto second block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    8 - goto third block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+    endif
+ if key = right arrow then
+    if current block = 1 or 2 or 3 then
+		do not do anything!
+	endif
+	if current block = 4 or 5 or 6 then
+	    set index = current block
+		if _block_selection[index] = 0 then
+		    fill current block with black
+			case current block:
+			    1 - goto first block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    2 - goto second block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    3 - goto third block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+    endif
+	if current block = 7 or 8 or 9 then
+	    set index = current block
+		if _block_selection[index] = 0 then
+		    fill current block with black
+			case current block:
+			    4 - goto first block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    5 - goto second block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    6 - goto third block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+    endif
+ if key = up arrow then
+    if current block = 1 or 2 or 3 then
+		do not do anything!
+	endif
+	if current block = 4 or 5 or 6 then
+	    set index = current block
+		if _block_selection[index] = 0 then
+		    fill current block with black
+			case current block:
+			    1 - goto first block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    2 - goto second block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    3 - goto third block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+    endif
+	if current block = 7 or 8 or 9 then
+	    set index = current block
+		if _block_selection[index] = 0 then
+		    fill current block with black
+			case current block:
+			    4 - goto first block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    5 - goto second block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+			    6 - goto third block
+				    if _block_array[index] = 0 then
+						fill current block with gray
+					endif
+					if _block_array[index] = 1 then
+					    fill current block with bright red
+				    endif
+					if _block_array[index] = 2 then
+					    fill current block with bright blue
+				    endif
+    endif
+			
+		
+		
+		
+	
+.BEGIN
