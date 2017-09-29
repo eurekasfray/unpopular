@@ -1,6 +1,6 @@
 # XAN: x-and-o
 
-XAN (or X&O or cross-and-naught) is an unfinished tic-tac-toe game I created and finished in late 2010. XAN is written in the x86 assembly language and is assembled using the [FASM](https://flatassembler.net) assembler. The game was implemented intentionally to exercise my knowledge of video programming.
+XAN (or X&O or cross-and-naught) is an unfinished DOS tic-tac-toe game I created and finished in late 2010. XAN is written in the x86 assembly language and is assembled using the [FASM](https://flatassembler.net) assembler. The game was implemented intentionally to exercise my knowledge of video programming.
 
 ![XAN screenshot](https://github.com/eurekasfray/unpopular/raw/master/fasm/x-and-o/Docs/grid_001.png)
 
